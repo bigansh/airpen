@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBoard</title>
+</head>
+<style>
+    body {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qGaAHGNJPYVySQhZivQ6hvum2GWkWOf8lA&usqp=CAU');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        backdrop-filter: blur(5px);
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    #bg{
+        border-radius: 20px;
+        box-shadow: 2px solid gray;
+    
+    }
+</style>
+<body>
+    <center>
+        <img src="{{ url_for('video_feed') }}" id="bg" alt="Something Went Wrong With Video Capturing">
+    </center>
+</body>
+</html>
